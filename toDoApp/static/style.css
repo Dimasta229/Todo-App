@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    background-color: rgb(27, 3, 50);
+}
+
+h2 {
+    text-align: center;
+    padding-top: 150px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+}
+
+form {
+    margin: auto;
+    margin: 30px 20%;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.input_fields {
+    background-color: white;
+    padding: 50px 30px;
+    padding-top: 50px;
+    /* position: fixed;
+    width: 60%; */
+    z-index: 2px;
+}
+
+form input {
+    padding: 15px;
+    width: 60%;
+    outline: grey;
+    border: solid 1px gray;
+}
+
+form #button {
+    width: 20%;
+    padding: 15px;
+    background-color: rgb(27, 3, 49);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form #button:hover {
+    background-color: rgb(33, 5, 60);
+}
+
+.general_output {
+    padding: 30px 20%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#output {
+    display: grid;
+    grid-template-columns: 2fr 100px 100px;
+    padding: 20px 10%;
+    background-color: rgb(255, 255, 255);
+    grid-gap: 10px;
+    text-align: left;
+    align-items: center;
+    margin: auto;
+    border: solid 1px rgb(234, 234, 234);
+    margin-bottom: 0;
+}
+
+#output p {
+    font-size: 18px;
+}
+
+#output button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: solid 1px grey;
+}
+
+#output button:hover {
+    background-color: antiquewhite;
+}

@@ -1,0 +1,4 @@
+.env
+/toDoProjectenv/
+/__pychache__/
+/.vscode/

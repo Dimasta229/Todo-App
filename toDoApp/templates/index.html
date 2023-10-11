@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <h2>My Todo App</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="input_fields">
+            <input type="text" name="title" id="title" placeholder="Enter text here" required>
+            <button type="submit" id="button">Submit</button>
+        </div>
+    </form>
+    <div class="general_output">
+        {% for todo in todos %}
+        <div id="output">
+            <p id="title_field">{{todo}}</p>
+            <a href="{% url 'update' todo.id %}"><button id="edit" type="submit">Edit</button></a>
+            <a href="{% url 'delete' todo.id %}"><button type="submit" id="delete">Delete</button></a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
